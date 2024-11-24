@@ -52,23 +52,15 @@ class Product {
 
   @override
   String toString() {
-    return '$name: ${price.toStringAsFixed(2)}';
+    return '$name: ${price.toStringAsFixed(0)}';
   }
 }
 
 class Electronics extends Product {
   Electronics(String name, double price) : super(name, price);
 
-  // @override
-  // void applyDiscount(double percent) {
-  //   if (percent > 30) {
-  //     percent = 30; //
-  //   }
-  //   super.applyDiscount(percent);
-  // }
 }
 
-// Subclass Clothing
 class Clothing extends Product {
   Clothing(String name, double price) : super(name, price);
 
