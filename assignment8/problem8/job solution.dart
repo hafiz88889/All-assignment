@@ -53,11 +53,3 @@ class job{
     print('Position: $_position,\nSalary: $_salary');
   }
 }
-void main(){
-  person Person=person('Hakim', 35);
-  Person.printDetails();
-
-  job Job=job('Sr Developer', 35000);
-  Job.printDetails();
-
-}
